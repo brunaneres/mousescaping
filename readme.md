@@ -1,2 +1,2 @@
-Projeto criado a partir de um desafio do Pedro Lucas @pedrolucascodes
+Projeto criado a partir de um desafio do Pedro Lucas [@pedrolucascodes](https://github.com/pedrolucascodes)
 Objetivo: Criar uma tela web em que uma bola fuja do mouse.
