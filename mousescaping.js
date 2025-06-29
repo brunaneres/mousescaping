@@ -127,7 +127,7 @@ verificarTamanhoTela() {
         setTimeout(() => {
             bola.style.opacity = 1;
         }, 100); // ou o tempo que quiser pra "piscar"
-    }, 750);
+    }, 650);
 },
 
 
