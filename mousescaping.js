@@ -112,8 +112,8 @@ verificarTamanhoTela() {
  ativarModoToqueAleatorio() {
     const bola = document.getElementById("bola");
     const container = document.getElementById("area-jogo");
-    
-    setInterval(() => {
+
+    const movimentoAleatorio = () => {
         const larguraMax = container.clientWidth - bola.offsetWidth;
         const alturaMax = container.clientHeight - bola.offsetHeight;
     
@@ -122,12 +122,14 @@ verificarTamanhoTela() {
     
         bola.style.left = `${x}px`;
         bola.style.top = `${y}px`;
-        
+
         bola.style.opacity = 0;
         setTimeout(() => {
             bola.style.opacity = 1;
-        }, 100); // ou o tempo que quiser pra "piscar"
-    }, 500);
+        }, 50); // ou o tempo que quiser pra "piscar"
+    };
+    movimentoAleatorio();  
+    setInterval(movimentoAleatorio, 550);
 },
 
 
@@ -163,7 +165,6 @@ registrarEventos() {
     const mensagem = document.getElementById("parabens");
     mensagem.style.display = "flex";
  },
-
 
 };
 
